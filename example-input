@@ -1,0 +1,11 @@
+# Comments like this are ignored
+# --- is a top rule or bottom rule
+# -- is a mid rule
+# columns are delimited by commas, but this can be changed with the -d option
+# run cat example-input | csv2table to see this as LaTeX code
+---
+this,is,an
+--
+example,of,a
+csv,to,table
+---

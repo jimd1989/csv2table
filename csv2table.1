@@ -1,0 +1,79 @@
+.Dd $Mdocdate$
+.Dt csv2table1
+.Os
+.Sh NAME
+.Nm csv2table
+.Nd convert csv input to tex format
+.Sh SYNOPSIS
+.Nm <stdin> | csv2table
+.Op -option
+.Sh DESCRIPTION
+.Pp
+csv2table accepts comma-separated input from stdin and returns a LaTeX table to stdout. Usually, the input file will be piped into the program.
+.Pp
+.Sh FLAGS
+.Bl -tag -width Ds
+.It Fl h
+Display the help message.
+.El
+.Bl -tag -width Ds
+.It Fl a
+Create a full stand-alone LaTeX document to accompany the table.
+.El
+.Bl -tag -width Ds
+.It Fl b
+Use the "booktabs" package to draw horizontal rules.
+.El
+.Bl -tag -width Ds
+.It Fl box
+Draw a box around the table.
+.El
+.Bl -tag -width Ds
+.It Fl c
+Center-align all table elements.
+.El
+.Bl -tag -width Ds
+.It Fl d
+Set a different delimiter to replace the comma. For tabs, please use c^v <tab> rather than '\\t'.
+.El
+.Bl -tag -width Ds
+.It Fl f
+Set font size of stand-alone LaTeX document. 'pt' is not required: just the number.
+.El
+.Bl -tag -width Ds
+.It Fl grid
+Draw a grid around the table elements.
+.El
+.Bl -tag -width Ds
+.It Fl i
+The number of spaces to index LaTeX code rows. Has no effect on the placement of elements in the final rendered document.
+.El
+.Bl -tag -width Ds
+.It Fl l
+Left-align all table elements (default behavior).
+.El
+.Bl -tag -width Ds
+.It Fl r
+Right-align all table elements.
+.El
+.Bl -tag -width Ds
+.It Fl s
+Set the stretch factor (padding) of table elements. Should be a float value.
+.El
+.Bl -tag -width Ds
+.It Fl t
+Provide a custom table layout string, such as '|l| r c', for more advanced rendering. This option requires the user to know the exact number of columns.
+.El
+.Sh OTHER INPUT
+.Pp
+csv2table accepts other forms of input as well:
+.Bd -literal -offset indent
+\& #    Commented text. Will be ignored.
+\& !    Literal text. Will be echoed without processing.
+\& ---  A top or bottom horizontal rule.
+\& --   A middle horizontal rule.
+.Ed
+.Sh HISTORY
+csv2table was written in 2019 for Python 3.
+.Sh AUTHORS
+Written by Jim Dalrymple. https://dalrym.pl
