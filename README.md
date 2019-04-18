@@ -1,5 +1,7 @@
 csv2table is a simple tool that reads comma-separated values from stdin and returns valid [LaTeX](https://www.latex-project.org/) tabular syntax to stdout. It is a quick and easy way to create LaTeX tables. Its pipe-friendly nature means that it can be called against blocks of text in vim and read back in, writing tables on the fly. You'll never want to type vanilla tabular syntax again.
 
+[![table rendered in LaTeX](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2latex-2.gif)](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2latex-2.gif)
+
 ## Requirements
 
 [Python 3](https://www.python.org/)
