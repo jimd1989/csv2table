@@ -72,6 +72,6 @@ And compiles to:
 
 And looks like:
 
-[![table rendered in LaTeX](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2table-1.png)](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2table-1.png)
+[![table rendered in LaTeX](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2latex-1.png)](https://raw.githubusercontent.com/jimd1989/csv2table/master/csv2latex-1.png)
 
 Play with the options until you get something you like. You can always edit the LaTeX code itself of course.
